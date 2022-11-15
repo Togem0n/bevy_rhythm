@@ -35,10 +35,10 @@ impl Directions {
     /// Returns the correct y coordinate for an arrow with this direction
     pub fn x(&self) -> f32 {
         match self {
-            Directions::Up => 150.,
-            Directions::Down => 50.,
-            Directions::Left => -50.,
-            Directions::Right => -150.,
+            Directions::Up => 75.,
+            Directions::Down => 20.,
+            Directions::Left => -25.,
+            Directions::Right => -75.,
         }
     }
 }
@@ -75,7 +75,7 @@ pub struct ArrowTime {
 impl ArrowTime {
     fn new(click_time: f64, speed: Speed, direction: Directions) -> Self {
         let speed_value = speed.value();
-        println!("{} + {}", click_time,click_time - (DISTANCE / speed_value) as f64);
+        // println!("{} + {}", click_time, click_time - (DISTANCE / speed_value) as f64);
         Self {
             spawn_time: click_time - (DISTANCE / speed_value) as f64,
             speed,
@@ -93,13 +93,13 @@ pub fn load_config() -> SongConfig {
     SongConfig {
         arrows: vec![
             ArrowTime::new(3., Speed::Medium, Directions::Up),
-            ArrowTime::new(4., Speed::Medium, Directions::Down),
-            ArrowTime::new(5., Speed::Medium, Directions::Left),
-            ArrowTime::new(6., Speed::Medium, Directions::Up),
-            ArrowTime::new(5., Speed::Medium, Directions::Right),
-            ArrowTime::new(5., Speed::Medium, Directions::Left),
-            ArrowTime::new(7., Speed::Medium, Directions::Left),
-            ArrowTime::new(7., Speed::Medium, Directions::Right),
+            ArrowTime::new(3.5, Speed::Medium, Directions::Down),
+            ArrowTime::new(4., Speed::Medium, Directions::Left),
+            ArrowTime::new(4.5, Speed::Medium, Directions::Right),
+            ArrowTime::new(5., Speed::Medium, Directions::Up),
+            ArrowTime::new(5.5, Speed::Medium, Directions::Down),
+            ArrowTime::new(6., Speed::Medium, Directions::Left),
+            ArrowTime::new(6.5, Speed::Medium, Directions::Right),
         ],
     }
 }

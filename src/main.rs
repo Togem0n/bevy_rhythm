@@ -16,9 +16,9 @@ fn main() {
               },
               ..default()
         }))
-        .add_plugin(ArrowsPlugin)
         .add_startup_system(setup)
         .insert_resource(types::load_config())
+        .add_plugin(ArrowsPlugin)
         .add_system(bevy::window::close_on_esc)
         .run();
 }
@@ -32,6 +32,5 @@ fn setup(mut commands: Commands) {
     // let config = types::load_config();
 
     commands
-        .spawn(Camera2dBundle::default())
-        .commands();
+        .spawn(Camera2dBundle::default());
 }
