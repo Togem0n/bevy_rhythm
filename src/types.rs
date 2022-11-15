@@ -35,10 +35,10 @@ impl Directions {
     /// Returns the correct y coordinate for an arrow with this direction
     pub fn x(&self) -> f32 {
         match self {
-            Directions::Up => 75.,
-            Directions::Down => 20.,
-            Directions::Left => -25.,
-            Directions::Right => -75.,
+            Directions::Left => -90.,
+            Directions::Down => -30.,
+            Directions::Up => 30.,
+            Directions::Right => 90.,
         }
     }
 }

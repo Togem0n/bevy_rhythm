@@ -76,7 +76,6 @@ fn spawn_arrows(
         // Check if arrow should be spawned at any point between last frame and this frame
         if secs_last < arrow.spawn_time && arrow.spawn_time < secs {
             remove_counter += 1;
-            println!("{}", arrow.spawn_time);
 
             // Get the correct material according to speed
             let texture = match arrow.speed {
@@ -124,6 +123,34 @@ fn move_arrows(time: Res<Time>, mut query: Query<(&mut Transform, &Arrow)>) {
     }
 }
 
+#[derive(Component)]
+struct TargetArrow;
+
+fn setup_target_arrows(mut commands: Commands, texture: Res<ArrowMaterialResource>) {
+    use Directions::*;
+    let directions = [Up, Down, Left, Right];
+
+    for direction in directions.iter() {
+        let mut transform =
+            Transform::from_translation(Vec3::new(direction.x(), TARGET_POSITION, 1.));
+        transform.rotate(Quat::from_rotation_z(direction.rotation()));
+        commands
+            .spawn(SpriteBundle {
+                texture: texture.border_texture.clone(),
+                sprite: Sprite {
+                    custom_size: Some(Vec2{
+                        x: 100.0,
+                        y: 100.0,
+                    }),
+                    ..Default::default()
+                },
+                transform,
+                ..Default::default()
+            })
+            .insert(TargetArrow);
+    }
+}
+
 pub struct ArrowsPlugin;
 impl Plugin for ArrowsPlugin {
     fn build(&self, app: &mut App) {
@@ -132,6 +159,7 @@ impl Plugin for ArrowsPlugin {
             .init_resource::<ArrowMaterialResource>()
             .init_resource::<SpawnTimer>()
             // Add systems
+            .add_system(setup_target_arrows)
             .add_system(spawn_arrows)
             .add_system(move_arrows);
     }

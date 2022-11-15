@@ -30,7 +30,6 @@ fn main() {
 
 fn setup(mut commands: Commands) {
     // let config = types::load_config();
-
     commands
         .spawn(Camera2dBundle::default());
 }
