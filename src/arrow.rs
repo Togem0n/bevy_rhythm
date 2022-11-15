@@ -159,7 +159,7 @@ impl Plugin for ArrowsPlugin {
             .init_resource::<ArrowMaterialResource>()
             .init_resource::<SpawnTimer>()
             // Add systems
-            .add_system(setup_target_arrows)
+            .add_startup_system(setup_target_arrows)
             .add_system(spawn_arrows)
             .add_system(move_arrows);
     }
