@@ -8,7 +8,7 @@ pub const SPAWN_POSITION: f32 = 300.;
 pub const TARGET_POSITION: f32 = -300.;
 
 /// Margin of error for clicking an arrow
-pub const THRESHOLD: f32 = 20.;
+pub const THRESHOLD: f32 = 40.;
 
 /// Total distance traveled by an arrow, from spawn to target
 pub const DISTANCE: f32 = SPAWN_POSITION - TARGET_POSITION;

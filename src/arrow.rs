@@ -123,6 +123,29 @@ fn move_arrows(time: Res<Time>, mut query: Query<(&mut Transform, &Arrow)>) {
     }
 }
 
+/// Despawns arrows when they reach the end if the correct button is clicked
+fn despawn_arrows(
+    mut commands: Commands,
+    query: Query<(Entity, &Transform, &Arrow)>,
+    keyboard_input: Res<Input<KeyCode>>,
+) {
+    for (entity, transform, arrow) in query.iter() {
+        let pos = transform.translation.y;
+
+        // Check if arrow is inside clicking threshold
+        if (TARGET_POSITION - THRESHOLD..=TARGET_POSITION + THRESHOLD).contains(&pos)
+            && arrow.direction.key_just_pressed(&keyboard_input)
+        {
+            commands.entity(entity).despawn();
+        }
+
+        // Despawn arrows after they leave the screen
+        if pos <= 2. * TARGET_POSITION {
+            commands.entity(entity).despawn();
+        }
+    }
+}
+
 #[derive(Component)]
 struct TargetArrow;
 
@@ -161,6 +184,7 @@ impl Plugin for ArrowsPlugin {
             // Add systems
             .add_startup_system(setup_target_arrows)
             .add_system(spawn_arrows)
-            .add_system(move_arrows);
+            .add_system(move_arrows)
+            .add_system(despawn_arrows);
     }
 }

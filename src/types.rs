@@ -13,9 +13,9 @@ impl Directions {
     /// Checks if a key that corresponds to this direction has been pressed
     pub fn key_just_pressed(&self, input: &Input<KeyCode>) -> bool {
         let keys = match self {
-            Directions::Up => [KeyCode::Up, KeyCode::D],
+            Directions::Left => [KeyCode::Left, KeyCode::D],
             Directions::Down => [KeyCode::Down, KeyCode::F],
-            Directions::Left => [KeyCode::Left, KeyCode::J],
+            Directions::Up => [KeyCode::Up, KeyCode::J],
             Directions::Right => [KeyCode::Right, KeyCode::K],
         };
 
