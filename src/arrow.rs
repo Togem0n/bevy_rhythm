@@ -34,7 +34,10 @@ impl FromWorld for ArrowMaterialResource {
 }
 
 #[derive(Component)]
-struct Arrow;
+struct Arrow {
+    speed: Speed,
+    direction: Directions,
+}
 
 // make timer a resouce
 #[derive(Resource)]
@@ -59,34 +62,65 @@ fn spawn_arrows(
     mut commands: Commands,
     assets_server: Res<AssetServer>,
     textures: Res<ArrowMaterialResource>,
+    mut song_config: ResMut<SongConfig>,
     time: Res<Time>,
     mut timer: ResMut<SpawnTimer>,
 ) {
-    if !timer.repeated_timer.tick(time.delta()).just_finished() {
-        return;
+    let secs = time.elapsed_seconds() as f64;
+    let secs_last = secs - time.delta_seconds_f64();
+
+    // Counter of how many arrows we need to spawn and remove from the list
+    let mut remove_counter = 0;
+    for arrow in &song_config.arrows {
+        // List is ordered, so we can just check until an item fails
+        // Check if arrow should be spawned at any point between last frame and this frame
+        if secs_last < arrow.spawn_time && arrow.spawn_time < secs {
+            remove_counter += 1;
+            println!("{}", arrow.spawn_time);
+
+            // Get the correct material according to speed
+            let texture = match arrow.speed {
+                Speed::Slow => textures.red_texture.clone(),
+                Speed::Medium => textures.blue_texture.clone(),
+                Speed::Fast => textures.green_texture.clone(),
+            };
+
+            let mut transform =
+                Transform::from_translation(Vec3::new(arrow.direction.x(), SPAWN_POSITION, 1.));
+            // Rotate the arrow acording to direction
+            transform.rotate(Quat::from_rotation_z(arrow.direction.rotation()));
+            commands
+                .spawn(SpriteBundle {
+                    texture,
+                    sprite: Sprite {
+                        custom_size: Some(Vec2{
+                            x: 100.0,
+                            y: 100.0,
+                        }),
+                        ..Default::default()
+                    },
+                    transform,
+                    ..Default::default()
+                })
+                .insert(Arrow {
+                    speed: arrow.speed,
+                    direction: arrow.direction,
+                });
+        } else {
+            break;
+        }
     }
 
-    let transform = Transform::from_translation(Vec3::new(0.0, SPAWN_POSITION, 1.0));
-    commands
-        .spawn(SpriteBundle {
-            texture: textures.red_texture.clone(),
-            transform,
-            sprite: Sprite {
-                custom_size: Some(Vec2{
-                    x: 100.0,
-                    y: 100.0,
-                }),
-                ..Default::default()
-            },
-            ..Default::default()
-        })
-        .insert(Arrow);
+    // Remove the arrows we have spawned from the list
+    for _ in 0..remove_counter {
+        song_config.arrows.remove(0);
+    }
 }
 
 /// Moves the arrows forward
 fn move_arrows(time: Res<Time>, mut query: Query<(&mut Transform, &Arrow)>) {
     for (mut transform, _arrow) in query.iter_mut() {
-        transform.translation.y -= time.delta_seconds() * BASE_SPEED;
+        transform.translation.y -= time.delta_seconds() * _arrow.speed.value();
     }
 }
 

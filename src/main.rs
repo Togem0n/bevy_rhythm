@@ -10,14 +10,15 @@ fn main() {
         .insert_resource(Msaa { samples: 4 })
         .add_plugins(DefaultPlugins.set(WindowPlugin {
             window: WindowDescriptor {
-                width: 800.0,
-                height: 800.0,
+                width: 900.0,
+                height: 900.0,
                 ..default()
               },
               ..default()
         }))
         .add_plugin(ArrowsPlugin)
         .add_startup_system(setup)
+        .insert_resource(types::load_config())
         .add_system(bevy::window::close_on_esc)
         .run();
 }

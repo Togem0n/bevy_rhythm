@@ -75,6 +75,7 @@ pub struct ArrowTime {
 impl ArrowTime {
     fn new(click_time: f64, speed: Speed, direction: Directions) -> Self {
         let speed_value = speed.value();
+        println!("{} + {}", click_time,click_time - (DISTANCE / speed_value) as f64);
         Self {
             spawn_time: click_time - (DISTANCE / speed_value) as f64,
             speed,
@@ -83,7 +84,7 @@ impl ArrowTime {
     }
 }
 
-#[derive(Debug)]
+#[derive(Debug, Resource)]
 pub struct SongConfig {
     pub arrows: Vec<ArrowTime>,
 }
@@ -91,11 +92,14 @@ pub struct SongConfig {
 pub fn load_config() -> SongConfig {
     SongConfig {
         arrows: vec![
-            ArrowTime::new(1., Speed::Slow, Directions::Up),
-            ArrowTime::new(2., Speed::Slow, Directions::Down),
-            ArrowTime::new(3., Speed::Slow, Directions::Left),
-            ArrowTime::new(4., Speed::Medium, Directions::Up),
-            ArrowTime::new(5., Speed::Fast, Directions::Right),
+            ArrowTime::new(3., Speed::Medium, Directions::Up),
+            ArrowTime::new(4., Speed::Medium, Directions::Down),
+            ArrowTime::new(5., Speed::Medium, Directions::Left),
+            ArrowTime::new(6., Speed::Medium, Directions::Up),
+            ArrowTime::new(5., Speed::Medium, Directions::Right),
+            ArrowTime::new(5., Speed::Medium, Directions::Left),
+            ArrowTime::new(7., Speed::Medium, Directions::Left),
+            ArrowTime::new(7., Speed::Medium, Directions::Right),
         ],
     }
 }
