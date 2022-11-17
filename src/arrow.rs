@@ -3,6 +3,7 @@ use crate::consts::*;
 use crate::types::*;
 
 use bevy::prelude::*;
+use crate::ScoreResource;
 
 /// Keeps the textures and materials for Arrows
 #[derive(Resource)]
@@ -128,6 +129,7 @@ fn despawn_arrows(
     mut commands: Commands,
     query: Query<(Entity, &Transform, &Arrow)>,
     keyboard_input: Res<Input<KeyCode>>,
+    mut score: ResMut<ScoreResource>,
 ) {
     for (entity, transform, arrow) in query.iter() {
         let pos = transform.translation.y;
@@ -137,11 +139,13 @@ fn despawn_arrows(
             && arrow.direction.key_just_pressed(&keyboard_input)
         {
             commands.entity(entity).despawn();
+            let _points = score.increase_corrects(TARGET_POSITION - pos);
         }
 
         // Despawn arrows after they leave the screen
         if pos <= 2. * TARGET_POSITION {
             commands.entity(entity).despawn();
+            score.increase_fails();
         }
     }
 }

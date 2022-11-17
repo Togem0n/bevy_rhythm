@@ -5,11 +5,14 @@ mod consts;
 mod types;
 mod ui;
 use ui::UiPlugin;
+mod score;
+use score::ScoreResource;
 
 fn main() {
     App::new()
         // Set antialiasing to use 4 samples
         .insert_resource(Msaa { samples: 4 })
+        .init_resource::<ScoreResource>()
         .add_plugins(DefaultPlugins.set(WindowPlugin {
             window: WindowDescriptor {
                 width: 900.0,
