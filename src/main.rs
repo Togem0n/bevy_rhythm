@@ -3,6 +3,8 @@ mod arrow;
 use arrow::ArrowsPlugin;
 mod consts;
 mod types;
+mod ui;
+use ui::UiPlugin;
 
 fn main() {
     App::new()
@@ -19,6 +21,7 @@ fn main() {
         .add_startup_system(setup)
         .insert_resource(types::load_config())
         .add_plugin(ArrowsPlugin)
+        .add_plugin(UiPlugin)
         .add_system(bevy::window::close_on_esc)
         .run();
 }
