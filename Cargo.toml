@@ -7,6 +7,9 @@ edition = "2021"
 
 [dependencies]
 bevy = "0.9"
+toml = "0.5.8"
+serde = "1.0.118"
+serde_derive = "1.0.118"
 
 [workspace]
 resolver = "2" # Important! wgpu/Bevy needs this!

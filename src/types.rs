@@ -1,8 +1,26 @@
-use crate::consts::*;
-use bevy::{input::{keyboard::KeyCode, Input}, prelude::Resource};
+use crate::{consts::*, arrow};
+use bevy::{input::{keyboard::KeyCode, Input}, prelude::{Resource, Handle, AudioSource, AssetServer}};
 use core::f32::consts::PI;
 
-#[derive(Copy, Clone, Debug, PartialEq)]
+use serde_derive::{Deserialize, Serialize};
+use std::fs::File;
+use std::io::prelude::*;
+
+#[derive(Deserialize, Debug)]
+struct SongConfigToml {
+    pub name: String,
+    pub filename: String,
+    pub arrows: Vec<ArrowTimeToml>,
+}
+
+#[derive(Deserialize, Serialize, Debug)]
+pub struct ArrowTimeToml {
+    pub click_time: f64,
+    pub speed: Speed,
+    pub direction: Directions,
+}
+
+#[derive(Copy, Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub enum Directions {
     Up,
     Down,
@@ -43,7 +61,7 @@ impl Directions {
     }
 }
 
-#[derive(Copy, Clone, Debug)]
+#[derive(Copy, Clone, Debug, Serialize, Deserialize)]
 pub enum Speed {
     Slow,
     Medium,
@@ -73,13 +91,13 @@ pub struct ArrowTime {
 }
 
 impl ArrowTime {
-    fn new(click_time: f64, speed: Speed, direction: Directions) -> Self {
-        let speed_value = speed.value();
+    fn new(arrow: &ArrowTimeToml) -> Self {
+        let speed_value = arrow.speed.value();
         // println!("{} + {}", click_time, click_time - (DISTANCE / speed_value) as f64);
         Self {
-            spawn_time: click_time - (DISTANCE / speed_value) as f64,
-            speed,
-            direction,
+            spawn_time: arrow.click_time - (DISTANCE / speed_value) as f64,
+            speed: arrow.speed,
+            direction: arrow.direction,
         }
     }
 }
@@ -87,19 +105,37 @@ impl ArrowTime {
 #[derive(Debug, Resource)]
 pub struct SongConfig {
     pub arrows: Vec<ArrowTime>,
+    pub name: String,
+    pub song_audio: Handle<AudioSource>,
 }
 
-pub fn load_config() -> SongConfig {
+pub fn load_config(path: &str, asset_server: &AssetServer) -> SongConfig {
+    // Open file and read contents
+    let mut file = File::open(format!("assets/songs/{}", path)).expect("Couldn't open file");
+    let mut contents = String::new();
+    file.read_to_string(&mut contents)
+        .expect("Couldn't read file into String");
+
+    // Parse using toml and Serde
+    let parsed: SongConfigToml =
+        toml::from_str(&contents).expect("Couldn't parse into SongConfigToml");
+
+    // Process arrows
+    let mut arrows = parsed
+        .arrows
+        .iter()
+        .map(|arr| ArrowTime::new(arr))
+        .collect::<Vec<ArrowTime>>();
+    // Sort arrows by spawn_time
+    arrows.sort_by(|a, b| a.spawn_time.partial_cmp(&b.spawn_time).unwrap());
+
+    // Load song audio and get the handle
+    let song_audio = asset_server.load(&*format!("songs/{}", parsed.filename));
+    println!("{}", parsed.filename);
+
     SongConfig {
-        arrows: vec![
-            ArrowTime::new(3., Speed::Medium, Directions::Up),
-            ArrowTime::new(3.5, Speed::Medium, Directions::Down),
-            ArrowTime::new(4., Speed::Medium, Directions::Left),
-            ArrowTime::new(4.5, Speed::Medium, Directions::Right),
-            ArrowTime::new(5., Speed::Medium, Directions::Up),
-            ArrowTime::new(5.5, Speed::Medium, Directions::Down),
-            ArrowTime::new(6., Speed::Medium, Directions::Left),
-            ArrowTime::new(6.5, Speed::Medium, Directions::Right),
-        ],
+        name: parsed.name,
+        song_audio,
+        arrows,
     }
 }

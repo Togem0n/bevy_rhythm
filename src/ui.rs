@@ -2,9 +2,6 @@ use bevy::{prelude::*, ecs::{system::Command, query}, reflect::erased_serde::__p
 use crate::ScoreResource;
 
 #[derive(Component)]
-struct FpsText;
-
-#[derive(Component)]
 struct ColorText;
 
 fn setup_ui(mut commands: Commands, asset_server: Res<AssetServer>) {
@@ -49,7 +46,6 @@ fn setup_ui(mut commands: Commands, asset_server: Res<AssetServer>) {
         ;}
     )
     ;
-
 
     commands.spawn(NodeBundle {
         style: Style {

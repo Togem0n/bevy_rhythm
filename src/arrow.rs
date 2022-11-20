@@ -6,6 +6,11 @@ use bevy::prelude::*;
 use crate::ScoreResource;
 
 /// Keeps the textures and materials for Arrows
+/// check how resorce means in bevy: https://bevy-cheatbook.github.io/programming/res.html
+/// now just treat them as something need to be accessed globally like assets
+/// typically  globally from anywhere (resources), 
+///            or using ECS patterns (entities/components).
+
 #[derive(Resource)]
 struct ArrowMaterialResource {
     red_texture: Handle<Image>,
@@ -192,3 +197,9 @@ impl Plugin for ArrowsPlugin {
             .add_system(despawn_arrows);
     }
 }
+// here we have a lot of systems, and we see each system as the game logic you want bevy to do
+// you need to feed systems(functions) specific parameter types, for example:
+// accessing resources using Res/ResMut
+// -- accessing components of entities using queries (Query)
+// -- creating/destroying entities, components, and resources using Commands (Commands)
+// -- sending/receiving events using EventWriter/EventReader
