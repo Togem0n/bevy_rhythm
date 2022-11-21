@@ -1,10 +1,11 @@
 use bevy::{prelude::*, ecs::{system::Command, query}, reflect::erased_serde::__private::serde::__private::de, utils::tracing::instrument::WithSubscriber};
 use crate::ScoreResource;
-
+use crate::consts::*;
 #[derive(Component)]
 struct ColorText;
 
 fn setup_ui(mut commands: Commands, asset_server: Res<AssetServer>) {
+    println!("main menu enter");
     commands.spawn(NodeBundle {
         style: Style {
             position_type: PositionType::Absolute,
@@ -93,8 +94,10 @@ fn setup_ui(mut commands: Commands, asset_server: Res<AssetServer>) {
 #[derive(Component)]
 struct TimeText;
 
-fn update_time_text(time: Res<Time>, mut query: Query<(&mut Text, &TimeText)>) {
-
+fn update_time_text(
+    time: Res<Time>, 
+    mut query: Query<(&mut Text, &TimeText)>,
+) {
         // Song starts 3 seconds after real time
         let secs = time.elapsed_seconds_f64();
 
@@ -132,8 +135,18 @@ pub struct UiPlugin;
 
 impl Plugin for UiPlugin {
     fn build(&self, app: &mut App) {
-        app.add_startup_system(setup_ui)
-        .add_system(update_time_text)
-        .add_system(update_score_text);
+        app
+        .add_system_set(
+            SystemSet::on_enter(AppState::Game)
+            .with_system(setup_ui)
+        )
+        .add_system_set(
+            SystemSet::on_update(AppState::Game)
+            .with_system(update_time_text)
+            .with_system(update_score_text)
+        );
+        // app.add_startup_system(setup_ui)
+        // .add_system(update_time_text)
+        // .add_system(update_score_text);
     }
 }

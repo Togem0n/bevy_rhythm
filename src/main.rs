@@ -2,6 +2,7 @@ use bevy::prelude::*;
 mod arrow;
 use arrow::ArrowsPlugin;
 mod consts;
+use consts::*;
 mod types;
 mod ui;
 use ui::UiPlugin;
@@ -9,6 +10,10 @@ mod score;
 use score::ScoreResource;
 mod audio;
 use audio::AudioPlugin;
+mod menu;
+use menu::MenuPlugin;
+// mod shaders;
+// use shaders::ShadersPlugin;
 
 // check ecs basic here
 // https://bevy-cheatbook.github.io/programming/ecs-intro.html
@@ -28,8 +33,13 @@ fn main() {
         .add_plugin(ArrowsPlugin)
         .add_plugin(UiPlugin)
         .add_plugin(AudioPlugin)
-        .add_startup_system(setup)
+        .add_plugin(MenuPlugin)
+        .add_state(AppState::Menu)
+        // .add_stage_after(CoreStage::Update, APP_STATE_STAGE, SystemStage::add_system_set(&mut self, system_set))
+        // .add_system_set(SystemSet::on_enter(AppState::Game).with_system(setup))
         .add_system(bevy::window::close_on_esc)
+        // .add_plugin(ShadersPlugin)
+        .add_startup_system(setup)
         .run();
 }
 

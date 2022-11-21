@@ -159,6 +159,7 @@ fn despawn_arrows(
 struct TargetArrow;
 
 fn setup_target_arrows(mut commands: Commands, texture: Res<ArrowMaterialResource>) {
+    println!("set up target arrows");
     use Directions::*;
     let directions = [Up, Down, Left, Right];
 
@@ -191,10 +192,20 @@ impl Plugin for ArrowsPlugin {
             .init_resource::<ArrowMaterialResource>()
             .init_resource::<SpawnTimer>()
             // Add systems
-            .add_startup_system(setup_target_arrows)
-            .add_system(spawn_arrows)
-            .add_system(move_arrows)
-            .add_system(despawn_arrows);
+            .add_system_set(
+                SystemSet::on_enter(AppState::Game)
+                .with_system(setup_target_arrows)
+            )
+            .add_system_set(
+                SystemSet::on_update(AppState::Game)
+                .with_system(spawn_arrows)
+                .with_system(move_arrows)
+                .with_system(despawn_arrows)
+            );
+            // .add_startup_system(setup_target_arrows)
+            // .add_system(spawn_arrows)
+            // .add_system(move_arrows)
+            // .add_system(despawn_arrows);
     }
 }
 // here we have a lot of systems, and we see each system as the game logic you want bevy to do
