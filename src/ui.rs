@@ -1,6 +1,8 @@
 use bevy::{prelude::*, ecs::{system::Command, query}, reflect::erased_serde::__private::serde::__private::de, utils::tracing::instrument::WithSubscriber};
 use crate::ScoreResource;
 use crate::consts::*;
+use crate::time::ControlledTime;
+
 #[derive(Component)]
 struct ColorText;
 
@@ -95,11 +97,11 @@ fn setup_ui(mut commands: Commands, asset_server: Res<AssetServer>) {
 struct TimeText;
 
 fn update_time_text(
-    time: Res<Time>, 
+    time: Res<ControlledTime>, 
     mut query: Query<(&mut Text, &TimeText)>,
 ) {
         // Song starts 3 seconds after real time
-        let secs = time.elapsed_seconds_f64();
+        let secs = time.seconds_since_startup();
 
         // Don't do anything before the song starts
         if secs < 0. {

@@ -12,6 +12,8 @@ mod audio;
 use audio::AudioPlugin;
 mod menu;
 use menu::MenuPlugin;
+mod time;
+use time::TimePlugin;
 // mod shaders;
 // use shaders::ShadersPlugin;
 
@@ -35,6 +37,7 @@ fn main() {
         .add_plugin(AudioPlugin)
         .add_plugin(MenuPlugin)
         .add_state(AppState::Menu)
+        .add_plugin(TimePlugin) 
         // .add_stage_after(CoreStage::Update, APP_STATE_STAGE, SystemStage::add_system_set(&mut self, system_set))
         // .add_system_set(SystemSet::on_enter(AppState::Game).with_system(setup))
         .add_system(bevy::window::close_on_esc)

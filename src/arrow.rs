@@ -1,5 +1,6 @@
 use std::time::Duration;
 use crate::consts::*;
+use crate::time::ControlledTime;
 use crate::types::*;
 
 use bevy::prelude::*;
@@ -69,12 +70,11 @@ fn spawn_arrows(
     assets_server: Res<AssetServer>,
     textures: Res<ArrowMaterialResource>,
     mut song_config: ResMut<SongConfig>,
-    time: Res<Time>,
+    time: Res<ControlledTime>,
     mut timer: ResMut<SpawnTimer>,
 ) {
-    let secs = time.elapsed_seconds() as f64;
+    let secs = time.seconds_since_startup() as f64;
     let secs_last = secs - time.delta_seconds_f64();
-
     // Counter of how many arrows we need to spawn and remove from the list
     let mut remove_counter = 0;
     for arrow in &song_config.arrows {
@@ -123,7 +123,7 @@ fn spawn_arrows(
 }
 
 /// Moves the arrows forward
-fn move_arrows(time: Res<Time>, mut query: Query<(&mut Transform, &Arrow)>) {
+fn move_arrows(time: Res<ControlledTime>, mut query: Query<(&mut Transform, &Arrow)>) {
     for (mut transform, _arrow) in query.iter_mut() {
         transform.translation.y -= time.delta_seconds() * _arrow.speed.value();
     }
@@ -158,7 +158,11 @@ fn despawn_arrows(
 #[derive(Component)]
 struct TargetArrow;
 
-fn setup_target_arrows(mut commands: Commands, texture: Res<ArrowMaterialResource>) {
+fn setup_target_arrows(
+    mut commands: Commands, 
+    texture: Res<ArrowMaterialResource>,
+    time: Res<Time>,
+) {
     println!("set up target arrows");
     use Directions::*;
     let directions = [Up, Down, Left, Right];
