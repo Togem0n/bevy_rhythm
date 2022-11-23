@@ -86,7 +86,15 @@ impl Plugin for TimePlugin {
             .with_system(update_time)
         )
         .add_system_set(
+            SystemSet::on_update(AppState::MakeMap)
+            .with_system(update_time)
+        )
+        .add_system_set(
             SystemSet::on_enter(AppState::Game)
+            .with_system(reset_time_when_entering_game)
+        )
+        .add_system_set(
+            SystemSet::on_enter(AppState::MakeMap)
             .with_system(reset_time_when_entering_game)
         )
         ;

@@ -139,6 +139,19 @@ fn despawn_arrows(
     for (entity, transform, arrow) in query.iter() {
         let pos = transform.translation.y;
 
+        // if keyboard_input.just_pressed(KeyCode::D) {
+        //     println!("D");
+        // }
+        // if keyboard_input.just_pressed(KeyCode::F) {
+        //     println!("F");
+        // } 
+        // if keyboard_input.just_pressed(KeyCode::J) {
+        //     println!("J");
+        // } 
+        // if keyboard_input.just_pressed(KeyCode::K) {
+        //     println!("K");
+        // }
+       
         // Check if arrow is inside clicking threshold
         if (TARGET_POSITION - THRESHOLD..=TARGET_POSITION + THRESHOLD).contains(&pos)
             && arrow.direction.key_just_pressed(&keyboard_input)

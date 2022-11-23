@@ -14,6 +14,8 @@ mod menu;
 use menu::MenuPlugin;
 mod time;
 use time::TimePlugin;
+mod map_maker;
+use map_maker::MapMakerPlugin;
 // mod shaders;
 // use shaders::ShadersPlugin;
 
@@ -38,6 +40,7 @@ fn main() {
         .add_plugin(MenuPlugin)
         .add_state(AppState::Menu)
         .add_plugin(TimePlugin) 
+        .add_plugin(MapMakerPlugin)
         // .add_stage_after(CoreStage::Update, APP_STATE_STAGE, SystemStage::add_system_set(&mut self, system_set))
         // .add_system_set(SystemSet::on_enter(AppState::Game).with_system(setup))
         .add_system(bevy::window::close_on_esc)
@@ -52,7 +55,7 @@ fn main() {
 // }
 
 fn setup(mut commands: Commands, asset_server: Res<AssetServer>) {
-    let config = types::load_config("test.toml", &asset_server);
+    let config = types::load_config("map.toml", &asset_server);
     commands
         .spawn(Camera2dBundle::default());
 

@@ -111,15 +111,18 @@ pub struct SongConfig {
 
 pub fn load_config(path: &str, asset_server: &AssetServer) -> SongConfig {
     // Open file and read contents
+    // let mut file = File::open(format!("assets/songs/{}", path)).expect("Couldn't open file");
     let mut file = File::open(format!("assets/songs/{}", path)).expect("Couldn't open file");
     let mut contents = String::new();
     file.read_to_string(&mut contents)
         .expect("Couldn't read file into String");
 
+    println!("debug 1");
     // Parse using toml and Serde
     let parsed: SongConfigToml =
         toml::from_str(&contents).expect("Couldn't parse into SongConfigToml");
 
+    println!("debug 2");
     // Process arrows
     let mut arrows = parsed
         .arrows

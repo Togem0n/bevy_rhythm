@@ -1,0 +1,1877 @@
+name = "Test song"
+filename = "audio.mp3"
+
+[[arrows]]
+click_time = 9.511467416
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 9.511467416
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 9.705110458
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 9.846022458
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 10.071747625
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 10.254725
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 10.373920791
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 10.537391541
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 10.705690125
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 10.905012833
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 11.05352725
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 11.188114916
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 11.305540875
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 11.588530166
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 11.655199125
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 11.822577083
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 11.971780583
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 12.238546583
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 12.372241083
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 12.504902166
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 12.672943083
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 12.871901958
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 13.022130541
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 13.20585575
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 13.338822083
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 13.472186166
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 13.6063565
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 13.738711041
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 13.804940458
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 13.988830708
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 14.155762291
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 14.405761041
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 14.555052083
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 14.672681916
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 14.838557916
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 15.005939333
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 15.20603225
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 15.341785
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 15.52249
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 15.621566958
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 15.922574375
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 15.922574375
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 16.105148166
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 16.287271541
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 16.455265458
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 16.521951708
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 16.638480041
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 16.755089083
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 16.888355583
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 17.005290666
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 17.005290666
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 17.238823083
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 17.305117708
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 17.505849208
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 17.555299125
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 17.788629666
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 17.855330208
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 18.055783416
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 18.121828666
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 18.356340541
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 18.356340541
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 18.605356708
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 18.605356708
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 18.854075416
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 18.921967166
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 19.140050166
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 19.140050166
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 19.405697625
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 19.472058708
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 19.688752458
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 19.688752458
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 19.939058666
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 20.00593275
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 20.221990041
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 20.221990041
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 20.505430458
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 20.571620583
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 20.738979625
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 20.738979625
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 21.005523
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 21.005523
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 21.272583541
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 21.339227875
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 21.555956416
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 21.555956416
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 21.839019791
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 21.839019791
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 22.005340416
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 22.005340416
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 22.13932575
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 22.13932575
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 22.271436166
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 22.322057458
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 22.422328333
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 22.422328333
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 22.638646041
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 22.672430416
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 22.90588675
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 22.972726833
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 23.172690208
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 23.388642291
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 23.555232750000002
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 23.7217575
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 23.871984875
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 24.005354083
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 24.121332625
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 24.272363375
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 24.389083208
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 24.539664625
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 24.539664625
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 24.772444875
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 24.772444875
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 25.038714708
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 25.105354041
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 25.2884205
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 25.355597125
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 25.606458166
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 25.606458166
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 25.8728735
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 25.8728735
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 26.121670583
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 26.239023375
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 26.254775666
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 26.355211666
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 26.405646166
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 26.488794375
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 26.521471875
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 26.589572666
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 26.722188791
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 26.722188791
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 26.939530416
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 26.972495625
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 27.221815291
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 27.221815291
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 27.488661458
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 27.522063125
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 27.772642291
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 27.772642291
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 28.042029208
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 28.104834333
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 28.288810625
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 28.355677125
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 28.572786583
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 28.572786583
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 28.839449625
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 28.904779625
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 29.122440916
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 29.122440916
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 29.389145166
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 29.389145166
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 29.672009291
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 29.672009291
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 29.921990791
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 29.921990791
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 30.188805166
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 30.254702916
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 30.455709166
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 30.455709166
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 30.605745291
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 30.605745291
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 30.738669833
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 30.805343791
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 30.872119
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 30.938476166
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 31.022510333
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 31.088889791
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 31.255512625
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 31.322376875
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 31.540086666
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 31.606068291
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 31.806284791
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 32.03911775
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 32.2062665
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 32.355322583
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 32.473106375
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 32.588892291
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 32.756164
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 32.888586833
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 33.005696083
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 33.137041
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 33.204877125
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 33.4218315
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 33.4218315
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 33.689604
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 33.689604
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 33.973494291
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 33.973494291
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 34.238972833
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 34.238972833
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 34.488942958
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 34.555361083
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 34.788460708
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 34.788460708
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 35.074232833
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 35.074232833
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 35.338949583
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 35.4891235
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 35.638630083
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 35.788736125
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 35.921981333
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 36.106821416
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 36.271941833
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 36.455510875
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 36.60479025
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 36.739126083
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 36.889327416
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 37.023454625
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 37.172654125
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 37.30622625
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 37.506049
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 37.655666333
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 37.806211
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 37.972429708
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 38.0888965
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 38.23903425
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 38.371992666
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 38.571374083
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 38.722331208
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 38.855572666
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 39.10609675
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 39.255100666
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 39.355733041
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 39.50603475
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 39.639794375
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 39.839455416
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 40.055429291
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 40.205593541
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 40.338861458
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 40.439367791
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 40.57246525
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 40.722126916
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 40.8887475
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 40.98906725
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 41.121844458
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 41.272244333
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 41.422382083
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 41.556139833
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 41.722029291
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 41.8222395
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 41.939693958
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 42.088246208
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 42.222105875
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 42.355395458
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 42.522035791
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 42.622518166
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 42.755465875
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 42.88863275
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 43.188726583
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 43.321898791
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 43.455824458
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 43.622252416
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 43.72204825
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 43.855419541
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 44.0056575
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 44.055679166
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 44.255802166
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 44.505663875
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 44.755765666
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 45.02215925
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 45.139645916
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 45.222286625
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 45.305495458
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 45.58930725
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 45.755792541
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 45.955905583
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 46.1060305
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 46.288867625
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 46.388740416
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 46.522425708
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 46.65534075
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 46.789409041
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 46.939253875
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 47.088826875
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 47.188850416
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 47.3389405
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 47.505745083
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 47.622849333
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 47.772201125
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 47.90603875
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 48.055711041
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 48.172851875
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 48.322256458
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 48.322256458
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 49.238810708
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 49.372530125
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 49.372530125
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 49.906224458
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 49.906224458
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 50.388856166
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 50.456002666
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 50.955796541
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 50.955796541
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 51.321960458
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 51.321960458
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 51.539783458
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 51.572453041
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 51.806008541
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 51.806008541
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 52.073205875
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 52.073205875
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 52.339796833
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 52.339796833
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 52.522035
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 52.590103708
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 52.606453458
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 52.689049875
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 52.855918541
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 52.9554135
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 53.105869125
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 53.121950416
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 53.289045208
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 53.405749541
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 53.555645083
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 53.706315625
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 53.774594416
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 53.839340291
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 53.889354958
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 53.955366333
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 54.021288416
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 54.088754083
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 54.138682375
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 54.188915
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 54.240666125
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 54.322201833
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 54.406496333
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 54.45675725
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 54.508713375
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 54.622069125
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 54.655607916
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 54.722246
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 54.755459666
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 54.838996541
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 55.055610708
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 55.289264166
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 55.340085583
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 55.575505583
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 55.575505583
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 55.854414541
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 55.854414541
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 56.122585125
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 56.122585125
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 56.38933025
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 56.38933025
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 56.572192208
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 56.655831791
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 56.672735958
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 56.92236125
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 56.92236125
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 57.209474833
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 57.209474833
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 57.455886416
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 57.455886416
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 57.640332166
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 57.773328083
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 57.773328083
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 58.05579625
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 58.05579625
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 58.290862916
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 58.355986958
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 58.540231666
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 58.540231666
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 58.739087583
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 58.872744333
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 58.940780916
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 58.988276166
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 59.088957916
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 59.139924791
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 59.343087125
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 59.343087125
+speed = "Medium"
+direction = "Right"
+
+[[arrows]]
+click_time = 59.62230025
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 59.689978291
+speed = "Medium"
+direction = "Left"
+
+[[arrows]]
+click_time = 59.774724333
+speed = "Medium"
+direction = "Up"
+
+[[arrows]]
+click_time = 59.872013958
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 60.155678041
+speed = "Medium"
+direction = "Down"
+
+[[arrows]]
+click_time = 60.25587425
+speed = "Medium"
+direction = "Right"

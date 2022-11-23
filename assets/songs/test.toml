@@ -2,7 +2,7 @@ name = "Test song"
 filename = "audio.mp3"
 
 arrows = [
-    { click_time = 3.00, speed = "Medium", direction = "Up" },
+    { click_time = 1.00, speed = "Medium", direction = "Up" },
     { click_time = 4.00, speed = "Medium", direction = "Down" },
     { click_time = 3.00, speed = "Medium", direction = "Left" },
     { click_time = 6.00, speed = "Medium", direction = "Right" },

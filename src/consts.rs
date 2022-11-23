@@ -1,5 +1,5 @@
 /// Speed at which a Slow arrow moves
-pub const BASE_SPEED: f32 = 200.;
+pub const BASE_SPEED: f32 = 600.;
 
 /// X coordinate value at which arrows spawn, should be out of screen
 pub const SPAWN_POSITION: f32 = 300.;
@@ -8,7 +8,7 @@ pub const SPAWN_POSITION: f32 = 300.;
 pub const TARGET_POSITION: f32 = -300.;
 
 /// Margin of error for clicking an arrow
-pub const THRESHOLD: f32 = 40.;
+pub const THRESHOLD: f32 = 100.;
 
 /// Total distance traveled by an arrow, from spawn to target
 pub const DISTANCE: f32 = SPAWN_POSITION - TARGET_POSITION;

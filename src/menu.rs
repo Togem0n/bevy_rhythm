@@ -13,6 +13,9 @@ fn in_main_menu(
     keys: Res<Input<KeyCode>>,
     mut game_state: ResMut<State<AppState>>,
 ) {
+    if keys.just_pressed(KeyCode::M) {
+        game_state.set(AppState::MakeMap).unwrap();
+    }
     if keys.just_pressed(KeyCode::Space) {
         game_state.set(AppState::Game).unwrap();
     }
