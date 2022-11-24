@@ -1,0 +1,1 @@
+pub const BASE_SPEED: f32 = 600.;
