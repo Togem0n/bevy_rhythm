@@ -1,14 +1,6 @@
 use crate::consts::*;
 use bevy::prelude::*;
 
-fn setup_main_menu(
-    mut commands: Commands, 
-    asset_server: Res<AssetServer>,
-    keys: Res<Input<KeyCode>>,
-) {
-    println!("enter main menu");
-}
-
 fn in_main_menu(
     keys: Res<Input<KeyCode>>,
     mut game_state: ResMut<State<AppState>>,
@@ -26,10 +18,6 @@ pub struct MenuPlugin;
 impl Plugin for MenuPlugin {
     fn build(&self, app: &mut App) {
         app
-        .add_system_set(
-            SystemSet::on_enter(AppState::Menu)
-            .with_system(setup_main_menu)
-        )
         .add_system_set(
             SystemSet::on_update(AppState::Menu)
             .with_system(in_main_menu)

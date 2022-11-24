@@ -1,4 +1,3 @@
-use std::time::Duration;
 use crate::consts::*;
 use crate::time::ControlledTime;
 use crate::types::*;
@@ -23,7 +22,6 @@ struct ArrowMaterialResource {
 impl FromWorld for ArrowMaterialResource {
     fn from_world(world: &mut World) ->Self {
         let world = world.cell();
-        let mut textures = world.get_resource_mut::<Assets<Image>>().unwrap();    
         let asset_server = world.get_resource::<AssetServer>().unwrap();
 
         let red_texture: Handle<Image> = asset_server.load("images/arrow_red.png");
@@ -46,32 +44,11 @@ struct Arrow {
     direction: Directions,
 }
 
-// make timer a resouce
-#[derive(Resource)]
-struct SpawnTimer {
-    pub repeated_timer: Timer,
-} // to distiguish the other timer
-
-impl SpawnTimer {
-    pub fn new() -> Self {
-        Self {
-            repeated_timer: Timer::from_seconds(1.0, TimerMode::Repeating),
-        }
-    }
-}
-impl Default for SpawnTimer {
-    fn default() -> Self {
-        Self::new()
-    }
-}
-
 fn spawn_arrows(
     mut commands: Commands,
-    assets_server: Res<AssetServer>,
     textures: Res<ArrowMaterialResource>,
     mut song_config: ResMut<SongConfig>,
     time: Res<ControlledTime>,
-    mut timer: ResMut<SpawnTimer>,
 ) {
     let secs = time.seconds_since_startup() as f64;
     let secs_last = secs - time.delta_seconds_f64();
@@ -139,21 +116,8 @@ fn despawn_arrows(
     for (entity, transform, arrow) in query.iter() {
         let pos = transform.translation.y;
 
-        // if keyboard_input.just_pressed(KeyCode::D) {
-        //     println!("D");
-        // }
-        // if keyboard_input.just_pressed(KeyCode::F) {
-        //     println!("F");
-        // } 
-        // if keyboard_input.just_pressed(KeyCode::J) {
-        //     println!("J");
-        // } 
-        // if keyboard_input.just_pressed(KeyCode::K) {
-        //     println!("K");
-        // }
-       
         // Check if arrow is inside clicking threshold
-        if (TARGET_POSITION - THRESHOLD..=TARGET_POSITION + THRESHOLD).contains(&pos)
+        if (TARGET_POSITION - THRESHOLD..= TARGET_POSITION + THRESHOLD).contains(&pos)
             && arrow.direction.key_just_pressed(&keyboard_input)
         {
             commands.entity(entity).despawn();
@@ -174,7 +138,6 @@ struct TargetArrow;
 fn setup_target_arrows(
     mut commands: Commands, 
     texture: Res<ArrowMaterialResource>,
-    time: Res<Time>,
 ) {
     println!("set up target arrows");
     use Directions::*;
@@ -207,7 +170,6 @@ impl Plugin for ArrowsPlugin {
         app
             // Initialize Resources
             .init_resource::<ArrowMaterialResource>()
-            .init_resource::<SpawnTimer>()
             // Add systems
             .add_system_set(
                 SystemSet::on_enter(AppState::Game)

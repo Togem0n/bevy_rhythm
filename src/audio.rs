@@ -1,11 +1,8 @@
-use crate::types::SongConfig;
 use bevy::prelude::*;
 use crate::consts::*;
 
-fn start_song(audio: Res<Audio>, time: Res<Time>, asset_serve: Res<AssetServer>) {
+fn start_song(audio: Res<Audio>, asset_serve: Res<AssetServer>) {
     // Song starts 3 seconds after real time
-    let secs = time.elapsed_seconds_f64();
-    let secs_last = secs - time.delta_seconds_f64();
     let music = asset_serve.load("songs/audio.ogg");
     audio.play(music);
     println!("nmsl");

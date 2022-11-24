@@ -2,12 +2,10 @@ use crate::time::ControlledTime;
 use crate::consts::*;
 use crate::types::{
     ArrowTimeToml,
-    Directions::{self, *},
+    Directions::*,
     Speed,
 };
-use bevy::core_pipeline::core_2d::graph::input;
 use bevy::{
-    app::AppExit,
     input::{keyboard::KeyCode, Input},
     prelude::*,
 };
@@ -40,7 +38,6 @@ fn save_key_presses(
 
 fn save_to_file_on_exit(
     keys: Res<Input<KeyCode>>,
-    events: Res<Events<AppExit>>,
     presses: Res<Presses>,
 ) {
     if keys.just_pressed(KeyCode::S) {
@@ -52,7 +49,6 @@ fn save_to_file_on_exit(
     }
 }
 
-struct MapMakerArrow(Directions);
 
 /// Creates map maker arrows
 fn setup_map_maker_arrows(
